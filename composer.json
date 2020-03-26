@@ -30,7 +30,7 @@
         "symfony/phpunit-bridge": "^3.2"
     },
     "extra": {
-        "contao-manager-plugin": "Minbdird\\Contao\\Appointment\\ContaoManager\\Plugin"
+        "contao-manager-plugin": "Mindbird\\Contao\\Appointment\\ContaoManager\\Plugin"
     },
     "autoload": {
         "psr-4": {
