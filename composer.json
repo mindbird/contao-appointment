@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Minbdird\\Contao\\Appointment\\": "src/"
+            "Mindbird\\Contao\\Appointment\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Minbdird\\Contao\\Appointment\\Tests\\": "tests/"
+            "Mindbird\\Contao\\Appointment\\Tests\\": "tests/"
         }
     },
     "support": {
