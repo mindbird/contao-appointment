@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of [package name].
+ * This file is part of [contao-appointment].
  *
- * (c) John Doe
+ * (c) mindbird
  *
  * @license LGPL-3.0-or-later
  */
