@@ -1,6 +1,6 @@
 {
     "name": "mindbird/contao-appointment",
-    "type": "symfony-bundle",
+    "type": "contao-bundle",
     "description": "A new description is needed",
     "homepage": "https://www.mindbird.de",
     "license": "LGPL-3.0-or-later",
