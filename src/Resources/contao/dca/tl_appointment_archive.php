@@ -1,17 +1,12 @@
 <?php
 
 
-$GLOBALS ['TL_DCA'] ['tl_appointment_archive'] = [
+$GLOBALS['TL_DCA']['tl_appointment_archive'] = [
     'config' => [
         'dataContainer' => 'Table',
         'enableVersioning' => true,
         'switchToEdit' => true,
-        'ctable' => ['tl_appointment_category', 'tl_appointment'],
-        'sql' => [
-            'keys' => [
-                'id' => 'primary'
-            ]
-        ]
+        'ctable' => ['tl_appointment_category', 'tl_appointment']
     ],
     'list' => [
         'sorting' => [
