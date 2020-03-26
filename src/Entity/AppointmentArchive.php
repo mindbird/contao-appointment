@@ -6,7 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table('tl_appointment_archive')
+ * @ORM\Table("tl_appointment_archive")
  */
 class AppointmentArchive
 {
