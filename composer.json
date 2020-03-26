@@ -1,7 +1,7 @@
 {
     "name": "mindbird/contao-appointment",
     "type": "symfony-bundle",
-    "description": "Skeleton for custom Contao 4 bundles",
+    "description": "A new description is needed",
     "homepage": "https://www.mindbird.de",
     "license": "LGPL-3.0-or-later",
     "authors": [
@@ -27,8 +27,7 @@
         "php-http/guzzle6-adapter": "^1.1",
         "php-http/message-factory": "^1.0.2",
         "phpunit/phpunit": "^5.7.26",
-        "symfony/phpunit-bridge": "^3.2",
-        "symfony/maker-bundle": "^1.14"
+        "symfony/phpunit-bridge": "^3.2"
     },
     "extra": {
         "contao-manager-plugin": "Minbdird\\Contao\\Appointment\\ContaoManager\\Plugin"
