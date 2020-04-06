@@ -6,9 +6,9 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table("tl_appointment_archive")
+ * @ORM\Table("tl_appointment_category")
  */
-class AppointmentArchive
+class AppointmentCategory
 {
     /**
      * @ORM\Id
@@ -30,4 +30,9 @@ class AppointmentArchive
      */
     protected $title;
 
+    /**
+     * @ORM\Column(type="integer", options={"default" : 60})
+     * @var int
+     */
+    protected $duration;
 }

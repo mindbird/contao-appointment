@@ -1,6 +1,6 @@
 <?php
 
-$GLOBALS['TL_DCA']['tl_appointment_archive'] = [
+$GLOBALS['TL_DCA']['tl_appointment_category'] = [
     'config' => [
         'dataContainer' => 'Table',
         'enableVersioning' => true,
@@ -22,28 +22,23 @@ $GLOBALS['TL_DCA']['tl_appointment_archive'] = [
             'format' => '%s'
         ],
         'global_operations' => [
+            'back' => [
+                'label' => &$GLOBALS['TL_LANG']['tl_appointment_archive']['back'],
+                'href' => 'table=tl_appointment_archive',
+                'icon' => 'back.gif'
+            ],
             'all' => [
                 'label' => &$GLOBALS['TL_LANG']['MSC']['all'],
                 'href' => 'act=select',
                 'class' => 'header_edit_all',
                 'attributes' => 'onclick="Backend.getScrollOffset()" accesskey="e"'
-            ],
-            'categories' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_appointment_archive']['categories'],
-                'href' => 'table=tl_appointment_category',
-                'icon' => 'categories.gif'
-            ],
+            ]
         ],
         'operations' => [
             'edit' => [
                 'label' => &$GLOBALS['TL_LANG']['tl_appointment_archive']['edit'],
-                'href' => 'table=tl_appointment',
-                'icon' => 'edit.gif'
-            ],
-            'editHeader' => [
-                'label' => &$GLOBALS['TL_LANG']['tl_appointment_archive']['editHeader'],
                 'href' => 'act=edit',
-                'icon' => 'header.gif'
+                'icon' => 'edit.gif'
             ],
             'copy' => [
                 'label' => &$GLOBALS['TL_LANG']['tl_appointment_archive']['copy'],
@@ -61,20 +56,30 @@ $GLOBALS['TL_DCA']['tl_appointment_archive'] = [
 
     // Palettes
     'palettes' => [
-        'default' => '{title_legend},title'
+        'default' => '{title_legend},title,duration;'
     ],
     // Fields
     'fields' => [
         'id' => [],
         'tstamp' => [],
         'title' => [
-            'exclude' => true,
+            'default' => '',
             'search' => true,
             'inputType' => 'text',
             'eval' => [
                 'mandatory' => true,
                 'maxlength' => 255,
                 'tl_class' => 'w50'
+            ]
+        ],
+        'duration' => [
+            'default' => 60,
+            'inputType' => 'text',
+            'eval' => [
+                'mandatory' => true,
+                'maxlength' => 255,
+                'tl_class' => 'w50',
+                'rgxp' => 'natural'
             ]
         ]
     ]
